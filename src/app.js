@@ -12,7 +12,7 @@ dbConnect();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.json({ "message": "welcome to my application" });
 })
 
 //router routes
